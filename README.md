@@ -11,6 +11,7 @@ Para isso deverá utilizar o magento na versão 2.3.4 e seguir as orientações 
 * Utilize o banco de dados MySQL
 * Instale os dados de exemplo do magento
 * Crie um módulo no magento com uma _Action_ que terá o objetivo de imprimir seu nome na tela a partir da seguinte URL ```http://<localhost.com>/meunome/index/test```
+* Nesta mesma _Action_ exiba um produto qualquer da sua loja com o nome, descrição, quantidade em estoque, preço e imagem do produto. 
 * Ao final faça o dump do banco de dados da sua loja e adicione no diretório de documentação
 * Não precisa ser perfeito em relação ao front, basta ser funcional e objetivo.
 
