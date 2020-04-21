@@ -58,6 +58,12 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
+## Restore dump
+
+You can restore dump database quickly using [Adminer](https://hub.docker.com/_/adminer) in [http://localhost:8080](http://localhost:8080). 
+
+*Check with ``magento_database`` was selected before proced to import*
+
 ## Results
 
 <p align="center">
