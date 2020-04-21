@@ -62,9 +62,11 @@ bin/magento setup:upgrade
 
 <p align="center">
   <img src="https://github.com/alissonphp/test-ithappens-1307/raw/develop/documentacao/prints/desktop.png" alt="Desktop" />
+  <br>
   Desktop
 </p>
 <p align="center">
     <img src="https://github.com/alissonphp/test-ithappens-1307/raw/develop/documentacao/prints/mobile.png" width="400px" alt="Mobile" />
+    <br>
         Mobile
 </p>
