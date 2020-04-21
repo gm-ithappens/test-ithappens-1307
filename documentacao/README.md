@@ -46,7 +46,7 @@ bin/magento setup:install \
 ```
 * Finish installation! Now you can access your store in [http://localhost](http://localhost)
 
-**Note: for this installation admin painel in http://localhost//admin_w9b7ss** 
+**Note: for this installation admin painel in [http://localhost//admin_w9b7ss](http://localhost//admin_w9b7ss)** 
 
 ## Sample data
 * Setup sample data from [CLI](https://devdocs.magento.com/guides/v2.3/install-gde/install/sample-data-before-composer.html)
@@ -57,3 +57,14 @@ bin/magento sampledata:deploy
 ```
 bin/magento setup:upgrade
 ```
+
+## Results
+
+<p align="center">
+  <img src="https://github.com/alissonphp/test-ithappens-1307/raw/develop/documentacao/prints/desktop.png" alt="Desktop" />
+  Desktop
+</p>
+<p align="center">
+    <img src="https://github.com/alissonphp/test-ithappens-1307/raw/develop/documentacao/prints/mobile.png" width="400px" alt="Mobile" />
+        Mobile
+</p>
