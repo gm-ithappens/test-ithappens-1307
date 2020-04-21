@@ -1,10 +1,22 @@
 <?php
 namespace ItHappens\LuisJhonne\Controller\Index;
 
-class Test extends \Magento\Framework\App\Action\Action
+use \Magento\Framework\App\Action\Action;
+
+class Test extends Action
 {
+    protected $_pageFactory;
+
+    public function __construct(
+        \Magento\Framework\App\Action\Context $context, 
+        \Magento\Framework\View\Result\PageFactory $pageFactory)
+    {
+        $this->_pageFactory = $pageFactory;
+        return parent::__construct($context);
+    }
+
     public function execute()
     {
-        echo "Luis Jhonne Carvalhal de Melo";
+        return $this->_pageFactory->create();
     }
 }
