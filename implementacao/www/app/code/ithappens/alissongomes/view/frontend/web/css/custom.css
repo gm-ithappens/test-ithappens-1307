@@ -1,0 +1,15 @@
+:root {
+    --mateus-red:  #ed262e;
+    --mateus-blue: #0e93dd;
+    --primary-color: #eee;
+    --padding-default: 6px;
+    --border-radius-default: 6px;
+    --box-shadow-default: 1px 1px 8px #ccc;
+}
+
+h2 { color: var(--mateus-blue) }
+h3 { color: var(--mateus-red); }
+.text-white { color: #fff; }
+.badge { padding: var(--padding-default); border-radius: var(--border-radius-default); box-shadow:  var(--box-shadow-default); }
+span.blue { background: var(--mateus-blue) }
+span.primary { background: var(--primary-color); } 
