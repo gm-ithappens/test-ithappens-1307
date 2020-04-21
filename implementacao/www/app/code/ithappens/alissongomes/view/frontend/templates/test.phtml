@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var ItHappes\AlissonGomes\Block\Test $block
+ * 
+ */
+echo '<pre>Get my name from Block ' . strtoupper($block->test()) . '</pre>';
+$productById = $block->getProductById(6);
+?>
+
+<section class="header">
+    <small>Product infos <?= $productById->getSku(); ?></small>
+    <h2><?= $productById->getName(); ?></h2>
+</section>
+<section class="details">
+    <img src="<?= $block->getProductImageUrl(6); ?>" alt="">
+    <h3>Product Details</h3>
+
+    <h4>Description:</h4>
+    <?= $productById->getDescription(); ?>
+
+    <h4> Price: <span class="badge blue text-white">$<?= number_format($productById->getPrice(), 2, '.', ','); ?></span> </h4>
+    <h4> Available Qty: <span class="badge primary"><?= $productById->getExtensionAttributes()->getStockItem()->getQty(); ?>x</span> </h4>
+</section>
