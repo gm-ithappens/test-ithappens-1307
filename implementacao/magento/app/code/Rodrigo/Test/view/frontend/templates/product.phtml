@@ -1,0 +1,28 @@
+<h1>PRODUTO DO RODRIGO</h1>
+<?php
+    $sku = '24-MB03';
+    $_product = $block->getProductBySku($sku);
+    $productStockBySku = $block->getStockItemBySku($sku);
+    $ProductImageUrl = $block->getUrl('pub/media/catalog').'product'.$_product->getImage();
+?>
+<table>
+    <tr>
+        <td width="30%" rowspan="5" class="product-image">
+            <img class="image" width="100%" alt="image" src="<?php echo $ProductImageUrl;?>" />
+        </td>
+        <td width="70%">
+            <tr>
+                <td class="product-name"><strong>Nome:</strong><br><?php echo $_product->getName(); ?></td>
+            </tr>
+            <tr>
+                <td class="product-description"><strong>Descrição:</strong> <?php echo $_product->getDescription(); ?></td>
+            </tr>
+            <tr>
+                <td class="product-stock"><strong>Quantidade:</strong><br><?php echo intval($productStockBySku['qty']); ?></td>
+            </tr>
+            <tr>
+                <td class="product-price"><strong>Preço:</strong><br><?php echo $_product->getFormatedPrice(); ?></td>
+            </tr>
+        </td>
+    <tr>
+</table>
