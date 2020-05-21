@@ -1,0 +1,23 @@
+<?php
+    $productCollection = $block->getProductCollection();
+    foreach ($productCollection as $product) {
+        $ProductImageUrl = $block->getUrl('pub/media/catalog').'product'.$product->getImage();
+?>
+        <table>
+            <tr>
+                <td width="30%">
+                    <img class="image" width="100%" alt="image" src="<?php echo $ProductImageUrl;?>" />
+                </td>
+                <td width="70%">
+                    <strong>SKU:</strong><br><?php echo $product->getSku(); ?><br><br>
+                    <strong>Nome:</strong><br><?php echo $product->getName(); ?><br><br>
+                    <strong>Descrição:</strong> <?php echo $product->getDescription(); ?><br>
+                    <strong>Preço:</strong><br><?php echo $product->getFormatedPrice(); ?>
+                </td>
+            <tr>
+        </table>
+        <br>
+<?php
+    }
+    
+?>
