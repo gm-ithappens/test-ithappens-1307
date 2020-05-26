@@ -1,0 +1,13 @@
+﻿<h1>Seletivo It Happens</h1>
+<h2><?php echo $this->getMyName(); ?></h2>
+
+<?php $product = $this->getProductDataUsingSku('MH01-XS-Gray'); ?>
+<h3>Informações do Produto</h3>
+    <p><strong>Nome:</strong> <?php echo $product->getName(); ?></p>
+    <p><strong>Descrição:</strong>  <?php echo $product->getDescription(); ?></p>
+    <p><strong>Quantidade em Estoque:</strong> <?php echo $this->getProductStock($product->getId()); ?></p>
+    <p><strong>Preço:</strong>  <?php echo $product->getPrice(); ?></p>
+    <p><strong>Imagem:</strong> <img class="image" width="30%" height="30%" alt="<?php echo $product->getName() ?>" src="<?php echo $this->getProductImage($product);?>" /></p>
+
+
+
